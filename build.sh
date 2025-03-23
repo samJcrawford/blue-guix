@@ -35,7 +35,7 @@ gpg --verify ${GUIX_INST}.sig
 
 # Extract and move guix store
 tar --warning=no-timestamp -xf ${GUIX_INST}
-mv var/guix /var/ && mv gnu /
+mv var/guix /var/ && mv gnu /var/
 rm ${GUIX_INST}
 
 
