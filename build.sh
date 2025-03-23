@@ -9,6 +9,10 @@ set -ouex pipefail
 # List of rpmfusion packages can be found here:
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
+# Set install locations
+mkdir -p /var/gnu
+ln -s /var/gnu /gnu
+
 # Set guix version
 GUIX_VERSION=1.4.0
 ARCH=$(uname -m)
